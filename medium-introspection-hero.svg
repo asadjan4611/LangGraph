@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">LangGraph Introspection Hero Image</title>
+  <desc id="desc">A visual showing introspection layers in LangGraph: State, Decision, Tool, Outcome, Recovery, with LangSmith tracing around a central agent graph.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="55%" stop-color="#1c2541"/>
+      <stop offset="100%" stop-color="#3a506b"/>
+    </linearGradient>
+
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.08"/>
+    </linearGradient>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .title { font: 700 64px 'Georgia', 'Times New Roman', serif; fill: #f8fafc; letter-spacing: 0.5px; }
+      .subtitle { font: 400 30px 'Verdana', 'Trebuchet MS', sans-serif; fill: #dbeafe; }
+      .chip { font: 700 24px 'Verdana', 'Trebuchet MS', sans-serif; fill: #e2e8f0; }
+      .nodeTitle { font: 700 26px 'Verdana', 'Trebuchet MS', sans-serif; fill: #f8fafc; }
+      .nodeText { font: 400 20px 'Verdana', 'Trebuchet MS', sans-serif; fill: #d1d5db; }
+      .small { font: 600 18px 'Verdana', 'Trebuchet MS', sans-serif; fill: #e2e8f0; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <circle cx="200" cy="120" r="120" fill="#60a5fa" fill-opacity="0.14"/>
+  <circle cx="1430" cy="760" r="180" fill="#22d3ee" fill-opacity="0.10"/>
+  <circle cx="1360" cy="160" r="90" fill="#f59e0b" fill-opacity="0.12"/>
+
+  <text x="120" y="120" class="title">Introspection in LangGraph</text>
+  <text x="120" y="170" class="subtitle">From Demo Agent to Production Reliability</text>
+
+  <rect x="120" y="210" rx="18" ry="18" width="410" height="58" fill="#0ea5e9" fill-opacity="0.25" stroke="#7dd3fc" stroke-opacity="0.65"/>
+  <text x="148" y="248" class="chip">Big Word Alert: LangSmith Tracing</text>
+
+  <g filter="url(#softGlow)">
+    <rect x="560" y="300" rx="22" ry="22" width="480" height="290" fill="url(#card)" stroke="#93c5fd" stroke-opacity="0.85"/>
+    <text x="700" y="355" class="nodeTitle">Agent Graph Core</text>
+
+    <rect x="610" y="390" rx="14" ry="14" width="120" height="60" fill="#0ea5e9" fill-opacity="0.35" stroke="#67e8f9"/>
+    <text x="645" y="428" class="small">Input</text>
+
+    <rect x="750" y="390" rx="14" ry="14" width="100" height="60" fill="#22c55e" fill-opacity="0.28" stroke="#86efac"/>
+    <text x="773" y="428" class="small">Route</text>
+
+    <rect x="870" y="390" rx="14" ry="14" width="120" height="60" fill="#f59e0b" fill-opacity="0.28" stroke="#fcd34d"/>
+    <text x="905" y="428" class="small">Tool</text>
+
+    <rect x="700" y="490" rx="14" ry="14" width="200" height="60" fill="#a855f7" fill-opacity="0.26" stroke="#d8b4fe"/>
+    <text x="740" y="528" class="small">Final Output</text>
+
+    <path d="M730 420 H750" stroke="#e2e8f0" stroke-width="4"/>
+    <path d="M850 420 H870" stroke="#e2e8f0" stroke-width="4"/>
+    <path d="M930 450 L860 490" stroke="#e2e8f0" stroke-width="4"/>
+    <path d="M790 450 L760 490" stroke="#e2e8f0" stroke-width="4"/>
+  </g>
+
+  <g>
+    <rect x="180" y="360" rx="16" ry="16" width="280" height="92" fill="url(#card)" stroke="#7dd3fc"/>
+    <text x="210" y="397" class="nodeTitle">State</text>
+    <text x="210" y="428" class="nodeText">Track key changes</text>
+
+    <rect x="180" y="480" rx="16" ry="16" width="280" height="92" fill="url(#card)" stroke="#86efac"/>
+    <text x="210" y="517" class="nodeTitle">Decision</text>
+    <text x="210" y="548" class="nodeText">Inspect branch logic</text>
+
+    <rect x="180" y="600" rx="16" ry="16" width="280" height="92" fill="url(#card)" stroke="#fcd34d"/>
+    <text x="210" y="637" class="nodeTitle">Tool</text>
+    <text x="210" y="668" class="nodeText">Validate payload + retries</text>
+  </g>
+
+  <g>
+    <rect x="1140" y="360" rx="16" ry="16" width="280" height="92" fill="url(#card)" stroke="#d8b4fe"/>
+    <text x="1170" y="397" class="nodeTitle">Outcome</text>
+    <text x="1170" y="428" class="nodeText">Score task quality</text>
+
+    <rect x="1140" y="480" rx="16" ry="16" width="280" height="92" fill="url(#card)" stroke="#fca5a5"/>
+    <text x="1170" y="517" class="nodeTitle">Recovery</text>
+    <text x="1170" y="548" class="nodeText">Measure fix speed</text>
+  </g>
+
+  <path d="M460 406 C520 406, 530 390, 560 390" stroke="#93c5fd" stroke-width="3" fill="none" stroke-dasharray="8 8"/>
+  <path d="M460 526 C520 526, 530 450, 560 450" stroke="#86efac" stroke-width="3" fill="none" stroke-dasharray="8 8"/>
+  <path d="M460 646 C520 646, 530 520, 560 510" stroke="#fcd34d" stroke-width="3" fill="none" stroke-dasharray="8 8"/>
+
+  <path d="M1040 520 C1090 520, 1110 406, 1140 406" stroke="#d8b4fe" stroke-width="3" fill="none" stroke-dasharray="8 8"/>
+  <path d="M1040 560 C1100 580, 1110 526, 1140 526" stroke="#fca5a5" stroke-width="3" fill="none" stroke-dasharray="8 8"/>
+
+  <text x="120" y="820" class="subtitle">Practical rule: Inspect first, optimize second, scale with evidence.</text>
+</svg>

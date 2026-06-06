@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="627" viewBox="0 0 1200 627" role="img" aria-labelledby="title desc">
+  <title id="title">LinkedIn Cover - LangGraph Introspection</title>
+  <desc id="desc">A LinkedIn feed cover image about introspection in LangGraph with five types and LangSmith tracing.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="55%" stop-color="#1c2541"/>
+      <stop offset="100%" stop-color="#243b53"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.08"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 54px 'Georgia', 'Times New Roman', serif; fill: #f8fafc; }
+      .subtitle { font: 400 24px 'Verdana', 'Trebuchet MS', sans-serif; fill: #dbeafe; }
+      .chip { font: 700 18px 'Verdana', 'Trebuchet MS', sans-serif; fill: #e2e8f0; }
+      .pill { font: 700 17px 'Verdana', 'Trebuchet MS', sans-serif; fill: #f8fafc; }
+      .footer { font: 600 18px 'Verdana', 'Trebuchet MS', sans-serif; fill: #e2e8f0; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="627" fill="url(#bg)"/>
+
+  <circle cx="90" cy="90" r="90" fill="#38bdf8" fill-opacity="0.14"/>
+  <circle cx="1130" cy="570" r="110" fill="#22d3ee" fill-opacity="0.10"/>
+
+  <text x="60" y="90" class="title">Why LangGraph Agents Fail</text>
+  <text x="60" y="144" class="title">Without Introspection</text>
+  <text x="60" y="186" class="subtitle">A practical AI Engineering view for production reliability</text>
+
+  <rect x="60" y="215" rx="14" ry="14" width="440" height="42" fill="#0ea5e9" fill-opacity="0.23" stroke="#7dd3fc"/>
+  <text x="80" y="242" class="chip">Big Word Alert: LangSmith Tracing</text>
+
+  <rect x="60" y="285" rx="18" ry="18" width="1080" height="250" fill="url(#card)" stroke="#93c5fd" stroke-opacity="0.75"/>
+
+  <rect x="90" y="320" rx="14" ry="14" width="190" height="54" fill="#0ea5e9" fill-opacity="0.35" stroke="#67e8f9"/>
+  <text x="130" y="354" class="pill">State</text>
+
+  <rect x="300" y="320" rx="14" ry="14" width="190" height="54" fill="#22c55e" fill-opacity="0.32" stroke="#86efac"/>
+  <text x="327" y="354" class="pill">Decision</text>
+
+  <rect x="510" y="320" rx="14" ry="14" width="190" height="54" fill="#f59e0b" fill-opacity="0.30" stroke="#fcd34d"/>
+  <text x="557" y="354" class="pill">Tool</text>
+
+  <rect x="720" y="320" rx="14" ry="14" width="190" height="54" fill="#a855f7" fill-opacity="0.30" stroke="#d8b4fe"/>
+  <text x="749" y="354" class="pill">Outcome</text>
+
+  <rect x="930" y="320" rx="14" ry="14" width="180" height="54" fill="#ef4444" fill-opacity="0.26" stroke="#fca5a5"/>
+  <text x="955" y="354" class="pill">Recovery</text>
+
+  <text x="95" y="430" class="subtitle">Inspect execution, not just output.</text>
+  <text x="95" y="468" class="subtitle">Find the failure point. Fix it faster. Scale with evidence.</text>
+
+  <text x="60" y="585" class="footer">Read the full Medium article to see a beginner-friendly refund-agent walkthrough.</text>
+</svg>
